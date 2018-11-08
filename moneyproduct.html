@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+   
+      <!-- 最顶部 -->
+      <div class="money_top">
+        <div class="log fl">
+          <a href="javascript:history.go(-1);"><span>&lt;</span></a>
+        </div>
+        <div class="download fr">
+          <img src="./images/header_app.png" alt="">
+        </div>
+          <p>国内折扣</p>
+      </div>
+      
+      <!-- 产品详情 -->
+      <div class="moneyproduct">
+        <!-- 挖个巨坑 -->
+          <!-- <h3 class="title">移动端凑单品：海天 鲜味 生抽 1.28L</h3>
+          <div class="info">
+            <span class="buyFrom">京东商城</span>
+            <span class="time">10-25 14:10</span>
+            <span class="author">小编烟火 / 慢慢买</span>
+          </div>
+
+          <div class="content">
+            <div class="pic">
+              <img src="./images/product.jpg" alt="">
+            </div>
+            <p class="desc1">海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+            <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+           <div class="bgpic">
+              <img src="./images/product.jpg" alt="">
+           </div>
+            <div class="stock">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+
+            <div class="goBuy">
+              <a href="#">前往购买</a>
+            </div>
+
+          </div> -->
+
+      </div>
+
+     
+
+        <!-- 页面底部 -->
+      <div class="money_footer">
+          <div class="footer_title clearfix">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+            <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+          </div>
+          <div class="footer">
+            <p>
+              <a href="javascript:;" style="color:red">手机APP下载</a>
+              <a href="index.html">慢慢买手机版</a>
+              -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+          </div>
+        </div>
+
+  </div>
+  
+  <script type="text/html" id="productTmp">
+    {{ each result v i}}
+    <h3 class="title">{{v.productName}}</h3>
+    <div class="info">
+      <span class="buyFrom">{{v.productFrom}}</span>
+      <span class="time">{{v.productTime}}</span>
+      <span class="author">{{v.productTips}}</span>
+    </div>
+
+    <div class="content">
+      <div class="pic">
+        {{# v.productImgSm}}
+        <!-- <img src="./images/product.jpg" alt=""> -->
+      </div>
+      <p class="desc1">{{v.productInfo}}</p>
+      <p>{{v.productInfo2}}</p>
+      <!-- /*大图*/ -->
+      <div class="bgpic">
+      {{# v.productImg2}}
+      <!-- <img src="./images/product.jpg" alt=""> -->
+     </div>
+      <!-- /*有货地区*/  -->
+      <div class="stock">
+        {{# v.productCity}}
+      </div>
+
+      <div class="goBuy">
+        <a href="#">前往购买</a>
+      </div>
+
+      <div class="weixin">
+        <img src="./images/mmbweixin2.png" alt="">
+      </div>
+
+      <div class="comment">
+        {{# v.productComment}}
+      </div>
+
+    </div>  
+    
+    {{/each}}
+  
+  </script>
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/IScroll/iscroll.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+
+  <!-- 引入自己的js -->
+  <script src="./js/common.js"></script>
+  <script src="./js/moneyproduct.js"></script>
+</body>
+</html>

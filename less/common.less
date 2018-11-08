@@ -1,0 +1,136 @@
+/* 200开始缩小  媒体查询 */ 
+@color:#ff841d;
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.mmM_container{
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;;
+  
+}
+/* 头部 */
+.mmM_header{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  
+  /*最顶部*/
+  .mmM_top{
+    width: 100%;
+    height: 50px;
+    background-color: @color;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    .log{
+      padding: 12px;
+      height: 50px;
+
+      img{
+        width: 185.2px;
+        max-height: 25px;
+      }
+    }
+    .download{
+      width: 48px;
+      height: 48px;
+      padding-top:7px;
+      position: absolute;
+      top:0;
+      right: 0;
+
+      img{
+        width: 34px;
+        height: 34px;
+        margin: 0 auto;
+        
+      }
+    }
+
+  }
+  /*搜索部分*/
+  .mmM_search{
+    height: 50px;
+    // background-color: skyblue;
+    padding: 10px 80px 10px 10px;
+    position: relative;
+
+    .search_input{
+      display: block;
+      height: 30px;
+      width: 100%;
+      border-radius: 15px;
+      padding-left: 20px;
+      background-color: #f1f1f1;
+     
+    }
+    .btn_search{
+      width: 63px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      font-size: 16px;
+      color: #fff;
+      background-color: @color;
+      position: absolute;
+      top:10px;
+      right: 10px;
+    }
+  }
+
+  
+}
+
+/*页面底部*/
+.mmM_footer{
+   margin-top:25px;
+   background-color: #f1f1f1;
+   
+
+  .footer_title{
+    background-color: #efefef;
+    border-top:1px solid #c4c4c4; 
+    border-bottom:1px solid #c4c4c4; 
+    height: 34px;
+    line-height: 34px;
+
+      a{
+        float: left;
+        display: block;
+        width: 30%;
+        text-align: center;
+        border-right: 1px solid #c4c4c4;
+        color:#000;
+        font-size: 14px;
+      
+      }
+      a:last-child{
+        width: 40%;
+        border:none;
+    
+        img{
+          width: 15px;
+          height: 15px;
+          display: inline;
+          vertical-align:middle;
+          margin-top:-4px;
+          
+        }
+      }
+  }
+
+  .footer{
+
+    height: 60px;
+    padding: 15px 0;
+    p{
+      text-align: center;
+      a{
+        color: #000;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,293 @@
+@color:#f4483e;
+  /*最顶部*/
+.baicaijia_top{
+    width: 100%;
+    height: 50px;
+    // font-size: 20px;
+    padding-right: 48px;
+    background-color: @color;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    a{
+      display: block;
+      span{
+        padding: 12px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        color:#fff;
+      }
+    }
+
+    .download{
+      width: 48px;
+      height: 48px;
+      padding-top:7px;
+      position: absolute;
+      top:0;
+      right: 0;
+
+      img{
+        width: 34px;
+        height: 34px;
+        margin: 0 auto;
+        
+      }
+    }
+    p{
+      // width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color:#fff;
+      overflow: hidden;
+    }
+
+}
+
+/*产品列表*/ 
+.product_list{
+
+  .category_head{
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    position: relative;
+    #wapper{
+      position: relative;
+      width:100%;
+      height: 38px;
+      overflow: hidden;
+
+       ul{
+         width: 1000px;
+
+         li{
+          float: left;
+          
+          a{
+            margin:0 12px;
+            color:#000;
+            display: block;
+            height: 38px;
+            line-height: 38px;
+            font-size: 14px;
+    
+          }
+        }
+       }
+      
+     }
+    
+
+    /*搜索按钮*/ 
+    .search_btn{
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      right: 0;
+      top:0;
+      
+      background: url("../images/icon_bar.png") no-repeat -10px -55px;
+      background-color: #ccc;
+      padding:8px; 
+      background-origin:content-box;
+      background-size:220px 132px;
+    }
+  }
+  .recommen_List{
+    margin-top:5px;
+    li{
+      height: 150px;
+      // padding: 14px 8px;
+      background-color: #fff;
+      border-bottom: 1px solid #e7e7e7;
+      position: relative;
+      >a{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+      }
+      .item_left{
+        width: 140px;
+  
+        img{
+          width: 130px;
+          height: 135px;
+        }
+      }
+      .item_right{
+        overflow: hidden;
+        .title{
+          min-height: 28px;
+          max-height: 40px;
+          font-size: 14px;
+          color:#000;
+          font-weight: 400;
+         
+        }
+        .price{
+          margin-top: 4px;
+          font-size: 24px;
+          color: #ff5e5d;
+          i{
+            font-size: 16px;
+            margin-right: 4px;
+          }
+          em{
+            font-size:12px;
+            margin-right: 4px;
+          }
+          del{
+            margin-left:15px;
+            font-size: 12px;
+            color:#ccc;
+          }
+        }
+        .bottom{
+          position: relative;
+          .slide{
+            margin-top:15px;
+            position: relative;
+  
+            .bar{
+              i{
+                display: inline-block;
+                width:82px;
+                height: 14px;
+                background: #ffb7b7;
+                border-radius: 6px;
+                border: 1px solid #fc353a;
+                position: relative;
+                margin-right: 8px;
+              }
+              b{
+                font-weight: 400;
+                color: #fc353a;
+              }
+              em{
+                height: 100%;
+                background-color: #fc353a;
+                border-radius: 5px;
+               
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+  
+              }
+              span{
+                text-align: center;
+                line-height: 14px;
+                display: block;
+                font-weight: 700;
+                font-size: 12px;
+                color:#fff;
+              }
+            }
+            .get{
+              margin-top:10px;
+              float: left;
+              a{
+                display: block;
+                padding: 5px;
+                border: 1px dashed #ff5e5d;
+                width: 115px;
+               
+                color: #fc353a;
+                z-index: 2;
+              }
+            }
+          }
+  
+          .link{
+            float: right;
+            margin-top:10px;
+            margin-right: 5px;
+            height: 28px;
+            width: 60px;
+            a{
+              // position: absolute;
+              // right: 10px;
+              // top: 25px;
+              
+                line-height: 28px;
+                background-color: #ff5e5d;
+                font-size: 12px;
+                text-align: center;
+                border-radius: 5px;
+                display: block;
+                color: #fff;
+                padding: 2px 5px;
+            }
+           
+          }
+        }
+        
+      }
+      
+    }
+  }
+    
+ 
+
+  }
+
+
+
+/*页面底部*/
+.baicaijia_footer{
+  margin-top:25px;
+  background-color: #f1f1f1;
+  
+
+ .footer_title{
+   background-color: #efefef;
+   border-top:1px solid #c4c4c4; 
+   border-bottom:1px solid #c4c4c4; 
+   height: 34px;
+   line-height: 34px;
+
+     a{
+       float: left;
+       display: block;
+       width: 30%;
+       text-align: center;
+       border-right: 1px solid #c4c4c4;
+       color:#000;
+       font-size: 14px;
+     
+     }
+     a:last-child{
+       width: 40%;
+       border:none;
+   
+       img{
+         width: 15px;
+         height: 15px;
+         display: inline;
+         vertical-align:middle;
+         margin-top:-4px;
+         
+       }
+     }
+ }
+
+ .footer{
+
+   height: 60px;
+   padding: 15px 0;
+   p{
+     text-align: center;
+     a{
+       color: #000;
+     }
+   }
+ }
+}
+ 

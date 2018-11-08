@@ -1,0 +1,199 @@
+/* 200开始缩小  媒体查询 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.mmM_container {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+/* 头部 */
+.mmM_header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  /*最顶部*/
+  /*搜索部分*/
+}
+.mmM_header .mmM_top {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.mmM_header .mmM_top .log {
+  padding: 12px;
+  height: 50px;
+}
+.mmM_header .mmM_top .log img {
+  width: 185.2px;
+  max-height: 25px;
+}
+.mmM_header .mmM_top .download {
+  width: 48px;
+  height: 48px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mmM_header .mmM_top .download img {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+}
+.mmM_header .mmM_search {
+  height: 50px;
+  padding: 10px 80px 10px 10px;
+  position: relative;
+}
+.mmM_header .mmM_search .search_input {
+  display: block;
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+}
+.mmM_header .mmM_search .btn_search {
+  width: 63px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff841d;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*页面底部*/
+.mmM_footer {
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+.mmM_footer .footer_title {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+.mmM_footer .footer_title a {
+  float: left;
+  display: block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  color: #000;
+  font-size: 14px;
+}
+.mmM_footer .footer_title a:last-child {
+  width: 40%;
+  border: none;
+}
+.mmM_footer .footer_title a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.mmM_footer .footer {
+  height: 60px;
+  padding: 15px 0;
+}
+.mmM_footer .footer p {
+  text-align: center;
+}
+.mmM_footer .footer p a {
+  color: #000;
+}
+.productlist {
+  background-color: #fff;
+  /*对应产品列表*/
+  /*分页*/
+}
+.productlist .productlist_title {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom, #ffffff, #ebebeb);
+  font-size: 14px;
+}
+.productlist .productlist_title a {
+  color: #000;
+}
+.productlist .productlist_title .select_btn {
+  width: 60px;
+  height: 28px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #f5f5f5, #d7d7d7);
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 2px #888;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.productlist .productlist_List li {
+  padding: 14px 8px;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+.productlist .productlist_List li a {
+  display: block;
+}
+.productlist .productlist_List li .item_left {
+  margin-right: 10px;
+}
+.productlist .productlist_List li .item_left img {
+  width: 100px;
+  height: 100px;
+}
+.productlist .productlist_List li .item_right .title {
+  height: 44px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #333;
+}
+.productlist .productlist_List li .item_right .data {
+  height: 49px;
+}
+.productlist .productlist_List li .item_right .data .price {
+  margin-top: 4px;
+  color: #ea3900;
+  font-size: 18px;
+}
+.productlist .productlist_List li .item_right .data span {
+  margin-right: 10px;
+}
+.productlist .pagination {
+  margin-top: 10px;
+  height: 32px;
+}
+.productlist .pagination span {
+  display: block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.productlist .pagination span a {
+  padding: 8px 20px;
+  background: linear-gradient(to top, #f5f5f5, #d7d7d7);
+  box-shadow: 0 1px 2px #888;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #000;
+}
+.productlist .pagination span select {
+  background-color: #f8f8f8;
+  border: 1px solid #bababa;
+  font-size: 16px;
+  padding: 8px 15px;
+  margin-top: -7px;
+  font-size: 14px;
+}

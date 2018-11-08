@@ -1,0 +1,263 @@
+/* 200开始缩小  媒体查询 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.mmM_container {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+/* 头部 */
+.mmM_header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  /*最顶部*/
+  /*搜索部分*/
+}
+.mmM_header .mmM_top {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.mmM_header .mmM_top .log {
+  padding: 12px;
+  height: 50px;
+}
+.mmM_header .mmM_top .log img {
+  width: 185.2px;
+  max-height: 25px;
+}
+.mmM_header .mmM_top .download {
+  width: 48px;
+  height: 48px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mmM_header .mmM_top .download img {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+}
+.mmM_header .mmM_search {
+  height: 50px;
+  padding: 10px 80px 10px 10px;
+  position: relative;
+}
+.mmM_header .mmM_search .search_input {
+  display: block;
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+}
+.mmM_header .mmM_search .btn_search {
+  width: 63px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff841d;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*页面底部*/
+.mmM_footer {
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+.mmM_footer .footer_title {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+.mmM_footer .footer_title a {
+  float: left;
+  display: block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  color: #000;
+  font-size: 14px;
+}
+.mmM_footer .footer_title a:last-child {
+  width: 40%;
+  border: none;
+}
+.mmM_footer .footer_title a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.mmM_footer .footer {
+  height: 60px;
+  padding: 15px 0;
+}
+.mmM_footer .footer p {
+  text-align: center;
+}
+.mmM_footer .footer p a {
+  color: #000;
+}
+.bijia_main {
+  background-color: #f4f4f4;
+  /*标题导航 */
+  /*<!-- 对应产品描述-->*/
+  /*<!-- 购买方式 -->*/
+  /*通知*/
+  /*评论*/
+}
+.bijia_main .bijia_title {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom, #ffffff, #ebebeb);
+  font-size: 14px;
+}
+.bijia_main .bijia_title a {
+  color: #000;
+}
+.bijia_main .bijia_title .select_btn {
+  width: 60px;
+  height: 28px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #f5f5f5, #d7d7d7);
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 2px #888;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.bijia_main .productDesc {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.bijia_main .productDesc .product-name {
+  margin: 0 auto;
+  height: 200px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+.bijia_main .productDesc .product_pic img {
+  display: block;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.bijia_main .productDesc .collect {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+.bijia_main .tap {
+  border-top: 1px solid #b2350b;
+  border-bottom: 1px solid #b2350b;
+}
+.bijia_main .tap li {
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #c14d00;
+}
+.bijia_main .tap li a {
+  display: block;
+  text-align: center;
+  height: 32px;
+  line-height: 34px;
+  background-color: #ffc527;
+  color: #fff;
+  font-size: 14px;
+}
+.bijia_main .tap li:last-child {
+  border-right: none;
+}
+.bijia_main .tap li:first-child a {
+  background-color: #ffa229;
+}
+.bijia_main .plist {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #000;
+}
+.bijia_main .plist img {
+  width: 17px;
+  height: 17px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+.bijia_main .plist .plist_right {
+  margin-right: 5px;
+}
+.bijia_main .plist .plist_right span {
+  color: #cc0a5b;
+}
+.bijia_main .plist .plist_right button {
+  width: 58px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff5600;
+  margin-left: 15px;
+}
+.bijia_main .notice {
+  padding: 8px 10px;
+  line-height: 18px;
+}
+.bijia_main .comment {
+  border-top: 3px solid #676767;
+  background-color: #f1f1f1;
+}
+.bijia_main .comment .comment_title {
+  margin-top: 3px;
+  background-color: #dbdbdb;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  color: #000;
+}
+.bijia_main .comment li {
+  padding: 20px 10px 0px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.bijia_main .comment li .user_comment {
+  margin-top: 5px;
+}
+.bijia_main .comment .more {
+  padding: 20px 7px 0 7px;
+}
+.bijia_main .comment .more a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d7d7d7;
+  background: linear-gradient(to bottom, #f1f1f1, #d4d4d4);
+  box-shadow: 0 1px 0 #888;
+  color: #000;
+}

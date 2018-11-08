@@ -1,0 +1,115 @@
+//引入公用部分
+@import "common";
+
+.productlist{
+  background-color: #fff;
+  .productlist_title{
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background: linear-gradient(to bottom, #fff,#ebebeb);
+    font-size: 14px;
+
+    a{
+      color:#000;
+
+    }
+
+    .select_btn{
+      width: 60px;
+      height: 28px;
+      border-radius: 5px;
+      // -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+      background:linear-gradient(to top,#f5f5f5,#d7d7d7);
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 1px 2px #888;
+      margin-top:4px;
+      font-size: 14px;
+    }
+  }
+
+  /*对应产品列表*/ 
+  .productlist_List{
+    
+    li{
+      padding: 14px 8px;
+      background-color: #fff;
+      border-bottom: 1px solid #e7e7e7;
+      a{
+        display: block;
+      }
+      .item_left{
+        
+        margin-right: 10px;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .item_right{
+       
+        .title{
+          height: 44px;
+          line-height: 19px;
+          font-size: 14px;
+          color:#333;
+         
+         
+        }
+        .data{
+          height: 49px;
+          
+          
+          .price{
+            margin-top:4px;
+            color:#ea3900;
+            font-size: 18px;
+          }
+          span{
+            margin-right: 10px;
+          }
+         
+        }
+      }
+      
+    }
+ 
+
+  }
+
+  /*分页*/
+  .pagination{
+    margin-top: 10px;
+    height: 32px;
+  
+    span{
+      display: block;
+      float: left;
+      width: 33.33%;
+      text-align: center;
+
+      a{
+        padding: 8px 20px;
+        background:linear-gradient(to top,#f5f5f5,#d7d7d7);
+        box-shadow: 0 1px 2px #888;
+        font-size: 14px;
+        border-radius: 5px;
+        color:#000;
+      }
+
+      select{
+        background-color: rgb(248, 248, 248); 
+        border: 1px solid rgb(186, 186, 186);
+         font-size: 16px; 
+         padding: 8px 15px; 
+         margin-top:-7px;
+         font-size: 14px; 
+      }
+     
+      
+    }
+
+  }
+}

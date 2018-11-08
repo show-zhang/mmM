@@ -1,0 +1,51 @@
+//引入公用部分
+@import "common";
+
+.category_title{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  li{
+    
+    >a{
+      font-size: 16px;
+      color:#000;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 16px;
+      border-bottom:1px solid #ccc;
+      background-color: #efefef;
+      font-weight: bold;
+    }
+    .category_content{
+      display: none;
+      
+      background-color: #f9f9f9;
+        li{
+          float: left;
+          width:33.33%;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            
+            
+          a{
+            color:#333;
+            font-weight: 400;
+            font-size: 12px;
+            display: block;
+            border-bottom: none;
+            text-align: center;
+            background-color: #f9f9f9;
+          }
+
+        }
+        li:nth-child(3n){
+          border-right: none;
+        }
+    }
+    .category_content.current{
+        display: block;
+    }
+  }
+}

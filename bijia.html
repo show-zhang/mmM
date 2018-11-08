@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/bijia.css">
+  <title>慢慢买</title>
+</head>
+<body>
+  <div class="mmM_container">
+      <div class="mmM_header">
+        <!-- 最顶部 -->
+        <div class="mmM_top">
+          <div class="log fl">
+            <img src="./images/header_logo.png" alt="">
+          </div>
+          <div class="download fr">
+            <img src="./images/header_app.png" alt="">
+          </div>
+
+        </div>
+        <!-- 搜索框 -->
+        <div class="mmM_search">
+          <input type="text" class="search_input" placeholder="请输入你想比价的商品">
+          <button class="btn_search fr">搜索</button>
+        </div>
+
+      </div>
+      <!-- 主体列表 -->
+        <div class="bijia_main">
+          <!-- 标题导航 -->
+           <div class="bijia_title">
+            
+             <a href="index.html">首页</a>>
+             <a href="category.html">全部分类</a>>
+             <a href="javascript:;" id="categoryName">电视</a>>
+             <button class="select_btn fr">筛选</button> 
+           </div>
+           <!-- 对应产品描述-->
+            <div class="productDesc">
+              <!-- 挖个坑 -->
+              <!-- <div class="product-name">
+               联想 拯救者ISK 15.6英寸笔记本电脑 i7-6700HQ/8G/128GSSD+1T/GTX960M 2G独显
+              </div>
+              <div class="product_pic">
+                <img src="./images/mnav.jpg" alt="">
+              </div>
+              <img class="collect" src="./images/ic_temai.png" alt=""> -->
+            </div>
+            
+            <div class="tap">
+              <ul class="clearfix">
+                <li><a href="#">比价购买</a></li>
+                <li><a href="#">产品参数</a></li>
+                <li><a href="#">评价(2322)</a></li>
+              </ul>
+            </div>
+            <!-- 购买方式 -->
+            <div class="plist">
+              <div class="fl plist_left">
+                <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                <span>京东商城</span>
+              </div>
+              <div class="fr plist_right">
+                <span> ￥1499.00 </span>
+                <button>去购买</button>
+              </div>
+            </div>
+            <!-- 通知 -->
+            <div class="notice">
+                  * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </div>
+            <!-- 评价 -->
+            <div class="comment">
+              <div class="comment_title">网友评价</div>
+              <ul class="clearfix">
+                挖个坑
+                <!-- <li>
+                  <div class="hang1 clearfix">
+                    <span class="fl user">月***珊</span>
+                    <span class="fr data">2016/2/16</span>
+                  </div>
+                  <div class="hang2 clearfix">
+                   <span class="fr buy_from">购买自：京东商城</span>
+                  </div>
+                  <div class="user_comment">
+                      春节前买的这个本本，外观大气质感不错，键盘很舒适，按键的背光有两个亮度档可以调节，红色的键帽挺动感，性能我很满意，用鲁大师跑分17万多，像什么剑灵，巫师3，使命召唤，GTA等我也试过了，特效全开也算比较流畅。开机速度非常快，基本上不到10秒就进入桌面可以耍了。有两个不足的地方，一个是漏光问题，买之前已经做好心理准备了，开机后屏幕黑屏的时候，屏幕边缘有多处漏光，不过后期不影响使用，不是什么问题，第二个不足是散热，可能因为I7的原因，温度确实高啊，玩游戏的时候那个风扇几乎是在全速运行，软件测试玩游戏的时候CPU温度在60-70左右，平时在30度左右。总得来说还是满意的！
+                  </div>
+                </li> -->
+              </ul>
+             <div class="more">
+               <a href="#">查看更多评价</a>
+             </div>
+            </div>
+           
+        </div>
+ 
+      <!-- 页面底部 -->
+      <div class="mmM_footer">
+        <div class="footer_title clearfix">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer">
+          <p>
+            <a href="javascript:;" style="color:red">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+          </p>
+          <p>m.manmanbuy.com</p>
+        </div>
+      </div>
+  </div>
+   
+ 
+ 
+  <!-- 产品渲染模板 -->
+  <script type="text/html" id="productTmp">
+    {{each result v i}}
+    <div class="product-name">
+        {{v.productName}}
+      </div>
+      <div class="product_pic">
+          {{# v.productImg}}
+        </div>
+      
+    <img class="collect" src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+      {{/each}}
+   </script>
+
+   <!--评论渲染模板 -->
+   <script type="text/html" id="commentTmp">
+    {{each result v i}}
+      <li>
+        <div class="hang1 clearfix">
+          <span class="fl user">{{v.comName}}</span>
+          <span class="fr data">{{v.comTime}}</span>
+        </div>
+        <div class="hang2 clearfix">
+          <span class="fr buy_from">{{v.comFrom}}</span>
+        </div>
+        <div class="user_comment">
+          {{v.comContent}}
+        </div>
+      </li>
+      {{/each}}
+   </script>
+
+  
+ 
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/IScroll/iscroll.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+
+  <!-- 引入自己的js -->
+  <script src="./js/common.js"></script>
+  <script src="./js/bijia.js"></script>
+</body>
+</html>

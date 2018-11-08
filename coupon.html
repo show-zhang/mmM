@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+   
+      <!-- 最顶部 -->
+      <div class="baicaijia_top">
+        <div class="log fl">
+          <a href="index.html"><span>&lt;</span></a>
+        </div>
+        <div class="download fr">
+          <img src="./images/header_app.png" alt="">
+        </div>
+          <p>白菜价 - 淘宝内部价</p>
+      </div>
+      
+     
+
+        <!-- 页面底部 -->
+      <div class="baicaijia_footer">
+          <div class="footer_title clearfix">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+            <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+          </div>
+          <div class="footer">
+            <p>
+              <a href="javascript:;" style="color:red">手机APP下载</a>
+              <a href="index.html">慢慢买手机版</a>
+              -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+          </div>
+        </div>
+
+  </div>
+  
+   
+   <script type="text/html" id="titleTmp">
+    {{each result v i}}
+      <li data-titleid="{{i}}"><a href="javascript:;">{{v.title}}</a></li>
+    {{/each}}
+   </script>
+
+  
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/IScroll/iscroll.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+
+  <!-- 引入自己的js -->
+  <script src="./js/baicaijia.js"></script>
+</body>
+</html>
