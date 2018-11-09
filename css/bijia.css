@@ -112,6 +112,28 @@ body {
 .mmM_footer .footer p a {
   color: #000;
 }
+/*懒加载 显示加载图片*/
+.loading {
+  width: 100%;
+  height: 1200px;
+  background-color: #fff;
+}
+.loading img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  animation: rotate 3s infinite;
+}
+/*定义动画*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .bijia_main {
   background-color: #f4f4f4;
   /*标题导航 */
@@ -146,6 +168,28 @@ body {
   margin-top: 15px;
   margin-bottom: 25px;
   position: relative;
+  /*懒加载 显示加载图片*/
+  /*定义动画*/
+}
+.bijia_main .productDesc .loading {
+  width: 100%;
+  height: 1200px;
+  background-color: #fff;
+}
+.bijia_main .productDesc .loading img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .bijia_main .productDesc .product-name {
   margin: 0 auto;

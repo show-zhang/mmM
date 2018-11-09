@@ -24,9 +24,13 @@
       
       <!-- 商品列表 -->
       <div class="recommen_product">
-        <ul class="recommen_List clearfix">
-          <!-- 挖个巨坑 -->
-          <!-- <li>
+        <!-- 懒加载图片 -->
+        <div class="loading">
+            <img src="./images/load.png" alt="">
+        </div>
+        <!-- 挖个巨坑 -->
+          <!--<ul class="recommen_List clearfix">
+         <li>
             <a href="#">
               <img src="./images/product.jpg" alt="">
 
@@ -39,10 +43,8 @@
                 <span class="data">10-22 13:28</span>
               </div>
             </a>
-          </li> -->
-        
-       
-        </ul>
+          </li> 
+        </ul>-->
 
       </div>
 
@@ -68,22 +70,24 @@
   </div>
   
   <script type="text/html" id="recommenTmp">
-    {{each result v i}}
-    <li>
-        <a href="discount.html?productid={{v.productId}}">
-          <!-- <img src="./images/product.jpg" alt=""> -->
-          {{# v.productImg}}
-          <p class="title">
-              {{v.productName}}
-          </p>
-          <div class="price">{{v.productPrice}}</div>
-          <div class="info">
-            <span class="buyfrom">{{v.productFrom}} </span>| 
-            <span class="data">{{v.productTime}}</span>
-          </div>
-        </a>
-      </li>
-      {{/each}}
+    <ul class="recommen_List clearfix">
+      {{each result v i}}
+      <li>
+          <a href="discount.html?productid={{v.productId}}">
+            <!-- <img src="./images/product.jpg" alt=""> -->
+            {{# v.productImg}}
+            <p class="title">
+                {{v.productName}}
+            </p>
+            <div class="price">{{v.productPrice}}</div>
+            <div class="info">
+              <span class="buyfrom">{{v.productFrom}} </span>| 
+              <span class="data">{{v.productTime}}</span>
+            </div>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
   </script>
  
  

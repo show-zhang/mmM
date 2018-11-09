@@ -38,31 +38,38 @@
              <a href="javascript:;" id="category">电视</a>
              <button class="select_btn fr">筛选</button>  -->
            </div>
-           <!-- 对应产品列表 -->
-          <ul class="productlist_List">
-              <!-- 挖个巨坑 -->
-              <!-- <li>
-                <a href="#">
-                  <div class="item_left fl">
-                    <img src="./images/product.jpg" alt="">
-                  </div>
-                  <div class="item_right">
-                    <div class="title">
-                      <p>佳能(Canon)EOS 70D 单反相机套机EF-S 18-200MM F/3.5-5.6 IS</p>
-                    </div>
-                      <div class="data">
-                        <p class="price">&yen;6655.00</p>
-                        <p>
-                          <span>报价(6)</span>
-                          <span>评论(665)</span>
-                        </p> 
-                      </div>
-                  </div>
-                </a>
-              </li>  -->
-             
-            </ul>
 
+           <!-- 对应产品列表 -->
+           <div class="productlist_List">
+
+            <!-- 懒加载图片 -->
+              <div class="loading">
+                  <img src="./images/load.png" alt="">
+              </div>
+              <!-- 挖个巨坑 -->
+              <!--  <ul >
+                 <li>
+                    <a href="#">
+                      <div class="item_left fl">
+                        <img src="./images/product.jpg" alt="">
+                      </div>
+                      <div class="item_right">
+                        <div class="title">
+                          <p>佳能(Canon)EOS 70D 单反相机套机EF-S 18-200MM F/3.5-5.6 IS</p>
+                        </div>
+                          <div class="data">
+                            <p class="price">&yen;6655.00</p>
+                            <p>
+                              <span>报价(6)</span>
+                              <span>评论(665)</span>
+                            </p> 
+                          </div>
+                      </div>
+                    </a>
+                  </li> 
+                
+                </ul> -->
+           </div>
             <!-- 分页标签 -->
             <div class="pagination">
                 <span class="btn pre_btn"><a href="#">上一页</a></span>
@@ -109,27 +116,29 @@
   </script>
   <!-- 产品列表渲染模板 -->
   <script type="text/html" id="productlistTmp">
-    {{each result v i}}
-    <li>
-        <a href="bijia.html?productId={{v.productId}}&category={{v.categoryId}}&categoryName={{v.categoryName}}">
-          <div class="item_left fl">
-            {{# v.productImg}}
-          </div>
-          <div class="item_right">
-            <div class="title">
-              <p>{{v.productName}}</p>
+      <ul>
+      {{each result v i}}
+      <li>
+          <a href="bijia.html?productId={{v.productId}}&category={{v.categoryId}}&categoryName={{v.categoryName}}">
+            <div class="item_left fl">
+              {{# v.productImg}}
             </div>
-              <div class="data">
-                <p class="price">{{v.productPrice}}</p>
-                <p>
-                  <span>{{v.productQuote}}</span>
-                  <span>{{v.productCom}}</span>
-                </p> 
+            <div class="item_right">
+              <div class="title">
+                <p>{{v.productName}}</p>
               </div>
-          </div>
-        </a>
-      </li> 
-    {{/each}}
+                <div class="data">
+                  <p class="price">{{v.productPrice}}</p>
+                  <p>
+                    <span>{{v.productQuote}}</span>
+                    <span>{{v.productCom}}</span>
+                  </p> 
+                </div>
+            </div>
+          </a>
+        </li> 
+      {{/each}}
+    </ul>
   </script>
   <!-- 选择器渲染模板 -->
   <script type="text/html" id="selectTmp">

@@ -139,12 +139,60 @@ $(function(){
       success:function(info){
         // console.log(info);
         var htmlStr=template("gsproductTmp",info);
-        $(".gsproduct_list ul").html(htmlStr);
+        $(".gsproduct_list").html(htmlStr);
       }
     })
   }
    
+  
+  // 滚动时导航固定
+  // var topPart=$(".gsproduct_top");
+  // var navBar=$(".nav")
+  // var main=$(".gsproduct_list");
+  
+  // document.onscroll=function(){
 
+  //   var scrllTop=$("window").scollTop;//获取页面被捐钱的高度
+  //   // 被卷去的高度 >  定位的真实高度
+  //   if(screenTop>topPart.offset().top){
+  //     navBar.css("position","fixed");
+  //     navBar.css("top","0");
+  //     main.css("marginTop","navBar.offset().top"+10+"px");
+  //     console.log(topPart.offset().top);
+  //   }else{
+  //     navBar.css("position","");
+  //     main.css("marginTop","10px");
+  //   }
+  // }
+
+
+  //失败了
+  // var navBar=document.querySelector('.nav');
+  // var topPart=document.querySelector(".gsproduct_top");
+  // //不能取名为top，会无效果
+  // var main=document.querySelector(".gsproduct_list")
+
+ 
+  
+  // document.onscroll = function () {
+  
+  //   //获取被浏览器卷去的高度 scrollTop
+  // var scrollTop=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
    
+  //   // 被卷去的高度 >  定位的真实高度
+  //   if(scrollTop>topPart.offsetHeight){
+  //     navBar.style.position="fixed";
+  //     navBar.style.top=0;
+      
+  //     main.style.marginTop =navBar.offsetHeight+10+"px";
+  //   }else{
+  //     navBar.style.position="";
+  //     main.style.marginTop="10px";
+  //   }
+  
+    
+  // }
+  
+
 
 })

@@ -21,12 +21,18 @@
         </div>
           <p>省钱控 - 最新优惠</p>
       </div>
-      
+
+     
+
       <!-- 商品列表 -->
       <div class="moneyctrlP_list">
-        <ul class="recommen_List">
+             <!-- 懒加载图片 -->
+          <div class="loading">
+              <img src="./images/load.png" alt="">
+          </div>
           <!-- 挖个巨坑 -->
-            <!-- <li>
+        <!--  <ul class="recommen_List">
+           <li>
             <a href="#">
               <div class="item_left fl">
                 <img src="./images/product.jpg" alt="">
@@ -42,23 +48,8 @@
               </div>
             </a>
           </li> 
-          <li>
-            <a href="#">
-              <div class="item_left fl">
-                <img src="./images/product.jpg" alt="">
-              </div>
-              <div class="item_right">
-                <div class="title">
-                  <p>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span></p>
-                </div>
-                  <div class="data">
-                    <span>京东商城|10-25 14:10</span>
-                    <span class="num fr">1</span>
-                  </div>
-              </div>
-            </a>
-          </li>  -->
-        </ul>
+  
+        </ul> -->
 
       </div>
 
@@ -97,30 +88,32 @@
   
    <!-- 推荐商品列表 -->
    <script type="text/html" id="recommenTmp">
-    {{each result v i}}
-    <li>  
-      <a href="moneyproduct.html?productid={{v.productId}}">
-        <div class="item_left fl">
-          {{# v.productImg2}}
-        </div>
-        <div class="item_right">
-          <div class="title">
-            <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
+    <ul class="recommen_List">
+     {{each result v i}}
+      <li>  
+        <a href="moneyproduct.html?productid={{v.productId}}">
+          <div class="item_left fl">
+            {{# v.productImg2}}
           </div>
-            <div class="data">
-              <span>{{v.productFrom}}|{{v.productTime}}</span>
-              <span class="num fr">
-                <%  var str=v.productComCount.replace("有","");
-                    str=str.replace("人评论","");
-                    %>
-                <%=str %>  
-              </span>
+          <div class="item_right">
+            <div class="title">
+              <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
             </div>
-        </div>
-      </a>
-    </li>
+              <div class="data">
+                <span>{{v.productFrom}}|{{v.productTime}}</span>
+                <span class="num fr">
+                  <%  var str=v.productComCount.replace("有","");
+                      str=str.replace("人评论","");
+                      %>
+                  <%=str %>  
+                </span>
+              </div>
+          </div>
+        </a>
+       </li>
+       {{/each}}
 
-    {{/each}}
+      </ul>
   </script>
 
     <!-- 选择器渲染模板 -->

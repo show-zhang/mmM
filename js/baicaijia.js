@@ -30,8 +30,12 @@ $(function(){
      }
   });
 
-  
-  render();
+    //  延时加载
+    setTimeout(function(){
+      render();//一进入就渲染
+      // 懒加载的图片必须和ul并列，放在一个父元素内
+    },2000);
+ 
   //获取产品列表
   function render(id){
     $.ajax({
@@ -44,7 +48,7 @@ $(function(){
       success:function(info){
         console.log(info);
         var htmlStr=template("productTmp",info);
-        $(".recommen_List").html(htmlStr);
+        $(".product_list .product").html(htmlStr);
       }
     });
   

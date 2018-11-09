@@ -40,18 +40,26 @@
             哪个牌子好
           </div>
            <!-- 对应产品列表 -->
-          <ul class="brand_List">
-              <!-- 挖个巨坑 -->
-             <!-- <li>
-               <a href="#">
-                 <em>0</em>
-                 <div class="info">
-                   <div class="title">三星平板电脑</div>
-                   <p>30天全网销售：242408件</p>
-                  </div>
-               </a>
-             </li> -->
-            </ul>
+          <div class="brand_List">
+
+            <!-- 懒加载图片 -->
+          <div class="loading">
+              <img src="./images/load.png" alt="">
+          </div>
+          <!-- 挖个巨坑 -->
+            <!--  <ul>
+             <li>
+                <a href="#">
+                  <em>0</em>
+                  <div class="info">
+                    <div class="title">三星平板电脑</div>
+                    <p>30天全网销售：242408件</p>
+                    </div>
+                </a>
+              </li> 
+            </ul>-->
+            
+          </div>
             <div class="nav2">
               产品销量排行
             </div>
@@ -81,17 +89,19 @@
   </div>
 
   <script type="text/html" id="brandTmp">
-    {{each result v i}}
-    <li>
-      <a href="productlist.html?pageid=1&categoryid={{v.categoryId}}">
-        <em>{{v.brandId}}</em>
-        <div class="info">
-          <div class="title">{{v.brandName}}</div>
-          <p>{{v.brandInfo}}</p>
-         </div>
-      </a>
-    </li>
-    {{/each}}
+    <ul>
+      {{each result v i}}
+      <li>
+        <a href="productlist.html?pageid=1&categoryid={{v.categoryId}}">
+          <em>{{v.brandId}}</em>
+          <div class="info">
+            <div class="title">{{v.brandName}}</div>
+            <p>{{v.brandInfo}}</p>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
   </script>
   
  

@@ -55,6 +55,11 @@
   background-size: 220px 132px;
 }
 /*产品列表*/
+.product_list {
+  /*懒加载 显示加载图片*/
+  /*定义动画*/
+  /*产品列表*/
+}
 .product_list .category_head {
   height: 38px;
   line-height: 38px;
@@ -93,6 +98,26 @@
   padding: 8px;
   background-origin: content-box;
   background-size: 220px 132px;
+}
+.product_list .loading {
+  width: 100%;
+  height: 1200px;
+  background-color: #fff;
+}
+.product_list .loading img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .product_list .recommen_List {
   margin-top: 5px;

@@ -31,6 +31,7 @@ $(function(){
  
   
   render();
+  
   renderPage();
   // var htmlStr3=template("selectTmp2",obj);
   // $("#selectPage").html(htmlStr3);

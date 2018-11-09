@@ -42,43 +42,49 @@
           <!-- 搜索按钮 -->
           <div class="search_btn"></div>
         </div>
-        <ul class="recommen_List">
+        <!-- 产品列表 -->
+        <div class="product">
+          <!-- 懒加载图片 -->
+          <div class="loading">
+              <img src="./images/load.png" alt="">
+          </div>
           <!-- 挖个巨坑 -->
-            <!-- <li>
-            <a href="#">
-              <div class="item_left fl">
-                <img src="./images/product.jpg" alt="">
-              </div>
-              <div class="item_right">
-                <div class="title">
-                  <p>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span></p>
+       <!--  <ul class="recommen_List">
+              <li>
+              <a href="#">
+                <div class="item_left fl">
+                  <img src="./images/product.jpg" alt="">
                 </div>
-                <div class="price">
-                  <span>券后</span>
+                <div class="item_right">
+                  <div class="title">
+                    <p>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span></p>
+                  </div>
+                  <div class="price">
+                    <span>券后</span>
+                  </div>
+
+                  <div class="bottom">
+                      <div class="slide">
+                          <a href="">
+                              <i>
+                                <span>75%</span>
+                              </i>
+                            <span>已领75117张</span>
+                          </a>
+                          
+                        </div>
+      
+                        <div class="link">
+                            <a href="#">下单链接</a>
+                        </div>
+                  </div>
+                    
                 </div>
+              </a>
+            </li> 
 
-                <div class="bottom">
-                    <div class="slide">
-                        <a href="">
-                            <i>
-                              <span>75%</span>
-                            </i>
-                           <span>已领75117张</span>
-                        </a>
-                        
-                      </div>
-    
-                      <div class="link">
-                          <a href="#">下单链接</a>
-                      </div>
-                </div>
-                  
-              </div>
-            </a>
-          </li>  -->
-
-        </ul>
-
+         </ul> -->
+       </div>
       </div>
 
         <!-- 页面底部 -->
@@ -100,40 +106,17 @@
 
   </div>
   
-   <!-- 推荐商品列表 -->
-   <!-- <script type="text/html" id="recommenTmp">
-    {{each result v i}}
-    <li>  
-      <a href="moneyproduct.html?productid={{v.productId}}">
-        <div class="item_left fl">
-          {{# v.productImg2}}
-        </div>
-        <div class="item_right">
-          <div class="title">
-            <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
-          </div>
-            <div class="data">
-              <span>{{v.productFrom}}|{{v.productTime}}</span>
-              <span class="num fr">
-                <%  var str=v.productComCount.replace("有","");
-                    str=str.replace("人评论","");
-                    %>
-                <%=str %>  
-              </span>
-            </div>
-        </div>
-      </a>
-    </li>
-
-    {{/each}}
-  </script> -->
+  <!-- 导航模板 -->
    <script type="text/html" id="titleTmp">
+   
     {{each result v i}}
       <li data-titleid="{{i}}"><a href="javascript:;">{{v.title}}</a></li>
     {{/each}}
    </script>
 
+    <!-- 推荐商品列表模板 -->
    <script type="text/html" id="productTmp">
+    <ul class="recommen_List">
     {{each result v i}}
     <li>
         <a href="https://detail.tmall.com/item.htm?id={{v.productId}}"></a>
@@ -162,6 +145,8 @@
        
       </li> 
       {{/each}}
+
+    </ul>
    </script>
   
 

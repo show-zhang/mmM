@@ -50,23 +50,26 @@
         </div>
       <!-- 品牌列表 -->
       <div class="gsproduct_list">
-        <ul class="clearfix">
+          <div class="loading">
+              <img src="./images/load.png" alt="">
+          </div>
           <!-- 挖个坑 -->
-         <!-- <li>
-           <a href="#" class="big">
-              <div class="pic">
-                  <img src="./images/mnav.jpg" alt="">
-              </div>              
-              <div class="title">
-                  廿一客(21cake)专用餐具 1人份(不单独配送)
-              </div>
-              <div class="other clearfix">
-                  <div class="price">¥0.50</div>
-                  <div class="goBuy">去凑单</div>
-              </div>
-           </a>
-         </li> -->
-
+         <!-- <ul class="clearfix">
+          <li>
+            <a href="#" class="big">
+                <div class="pic">
+                    <img src="./images/mnav.jpg" alt="">
+                </div>              
+                <div class="title">
+                    廿一客(21cake)专用餐具 1人份(不单独配送)
+                </div>
+                <div class="other clearfix">
+                    <div class="price">¥0.50</div>
+                    <div class="goBuy">去凑单</div>
+                </div>
+            </a>
+          </li> 
+         </ul> -->
       </div>
      
 
@@ -107,6 +110,7 @@
 
   <!-- 商品列表渲染 -->
   <script type="text/html" id="gsproductTmp">
+    <ul class="clearfix"> 
     {{each result v i}}
     <li>
       <a href="https://item.m.jd.com/ware/view.action?wareId=1274360" class="big">
@@ -123,6 +127,7 @@
       </a>
     </li>
     {{/each}}
+   </ul>
   </script>
 
 

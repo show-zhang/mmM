@@ -40,12 +40,19 @@
             热门品牌排行
           </div>
            <!-- 对应产品列表 -->
-          <ul class="brandTitle_List">
-              <!-- 挖个巨坑 -->
-             <!-- <li>
+      <div class="brandTitle_List">
+           <!-- 懒加载图片 -->
+          <div class="loading">
+              <img src="./images/load.png" alt="">
+          </div>
+          <!-- 挖个巨坑 -->
+             <!-- <ul >
+              <li>
                <a href="#">平板电视十大品牌</a>
-             </li> -->
-            </ul>
+             </li> 
+            </ul>-->
+
+          </div>
         </div>
      
         
@@ -69,11 +76,13 @@
   </div>
 
   <script type="text/html" id="brandTmp">
-    {{each result v i}}
-    <li >
-      <a href="brand.html?brandtitleid={{v.brandTitleId}}&category=">{{v.brandTitle}}</a>
-    </li>
-    {{/each}}
+    <ul>
+      {{each result v i}}
+      <li >
+        <a href="brand.html?brandtitleid={{v.brandTitleId}}&category=">{{v.brandTitle}}</a>
+      </li>
+      {{/each}}
+    </ul>
   </script>
   
  
