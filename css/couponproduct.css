@@ -1,0 +1,132 @@
+/*最顶部*/
+.couponproduct_top {
+  width: 100%;
+  height: 50px;
+  padding-right: 48px;
+  background-color: #f4483e;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.couponproduct_top a {
+  display: block;
+}
+.couponproduct_top a span {
+  padding: 12px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: #fff;
+}
+.couponproduct_top .download {
+  width: 48px;
+  height: 48px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.couponproduct_top .download img {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+}
+.couponproduct_top p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+/*页面底部*/
+.couponproduct_footer {
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+.couponproduct_footer .footer_title {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+.couponproduct_footer .footer_title a {
+  float: left;
+  display: block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  color: #000;
+  font-size: 14px;
+}
+.couponproduct_footer .footer_title a:last-child {
+  width: 40%;
+  border: none;
+}
+.couponproduct_footer .footer_title a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.couponproduct_footer .footer {
+  height: 60px;
+  padding: 15px 0;
+}
+.couponproduct_footer .footer p {
+  text-align: center;
+}
+.couponproduct_footer .footer p a {
+  color: #000;
+}
+/*主体*/
+.tip {
+  margin: 8px 0;
+  height: 16px;
+  text-align: center;
+  color: #999999;
+}
+.couponproduct_list {
+  background-color: #fff;
+}
+.couponproduct_list li {
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-bottom: 10px;
+  min-height: 100px;
+}
+.couponproduct_list li a {
+  display: block;
+  padding: 10px 20px 10px 10px;
+}
+.couponproduct_list li a .left img {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.couponproduct_list li a .right {
+  font-size: 40px;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.couponproduct_list li a .center {
+  overflow: hidden;
+  margin-left: 110px;
+}
+.couponproduct_list li a .center .title {
+  color: #000;
+  font-size: 14px;
+}
+.couponproduct_list li a .center .title h2 {
+  font-weight: 700;
+}
+.couponproduct_list li a .center .time {
+  margin-top: 15px;
+  color: #EE7700;
+}

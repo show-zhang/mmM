@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/gsproduct.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+   
+      <!-- 最顶部 -->
+      <div class="gsproduct_top">
+        <div class="log fl">
+          <a href="javascript:history.go(-1);"><span>&lt;</span></a>
+        </div>
+        <div class="download fr">
+          <img src="./images/header_app.png" alt="">
+        </div>
+          <p>凑单品</p>
+      </div>
+
+      <!-- 导航 -->
+      <div class="nav">
+          <div class="category"> 
+            <!-- 大标题地区 -->
+            <ul class="shopNav clearfix">
+              <li>
+                <a href="#" class="jd current">
+                  <span>京东</span>▲  
+                </a>
+              </li>
+               <li>
+                <a href="#" class="hd"><span>华东</span>▲</a>
+              </li>
+              <li>
+                <a href="#" class="all"><span>全部价格</span>▲</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search_btn"></div> 
+      </div>
+      <div class="areaNav">
+          <ul class="clearfix">
+               <!-- 挖个坑 -->
+              <li class="on"><a href="">全部价格</a></li>
+          </ul>
+        </div>
+      <!-- 品牌列表 -->
+      <div class="gsproduct_list">
+        <ul class="clearfix">
+          <!-- 挖个坑 -->
+         <!-- <li>
+           <a href="#" class="big">
+              <div class="pic">
+                  <img src="./images/mnav.jpg" alt="">
+              </div>              
+              <div class="title">
+                  廿一客(21cake)专用餐具 1人份(不单独配送)
+              </div>
+              <div class="other clearfix">
+                  <div class="price">¥0.50</div>
+                  <div class="goBuy">去凑单</div>
+              </div>
+           </a>
+         </li> -->
+
+      </div>
+     
+
+        <!-- 页面底部 -->
+      <div class="gsproduct_footer">
+          <div class="footer_title clearfix">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+            <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+          </div>
+          <div class="footer">
+            <p>
+              <a href="javascript:;" style="color:red">手机APP下载</a>
+              <a href="index.html">慢慢买手机版</a>
+              -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+          </div>
+        </div>
+
+  </div>
+ <!-- 京东 -->
+  <script type="text/html" id="shopTmp">
+    {{each result v i}}
+    <li class="{{i===index?'on':''}} jd" data-id="{{v.shopId}}"><a href="javascript:;">{{v.shopName}}</a></li>
+    {{/each}}
+  </script>
+  <!--  华东-->
+  <script type="text/html" id="areaTmp">
+    {{each result v i}}
+    <li class="{{i===index?'on':''}} hd" data-id="{{v.areaId}}"><a href="javascript:;" >{{v.areaName}}</a></li>
+    {{/each}}
+  </script>
+  <!-- 全部地区 -->
+  <script type="text/html" id="allTmp">
+    <li class="on" ><a href="javascript:;" >{{areaName}}</a></li>
+  </script>
+
+  <!-- 商品列表渲染 -->
+  <script type="text/html" id="gsproductTmp">
+    {{each result v i}}
+    <li>
+      <a href="https://item.m.jd.com/ware/view.action?wareId=1274360" class="big">
+        <div class="pic">
+            <img src="{{v.productImg}}" alt="">
+        </div>              
+        <div class="title">
+            {{v.productName}}
+        </div>
+        <div class="other clearfix">
+            <div class="price">{{v.productPrice}}</div>
+            <div class="goBuy">去凑单</div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/IScroll/iscroll.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+
+  <!-- 引入自己的js -->
+  <script src="./js/gsproduct.js"></script>
+</body>
+</html>

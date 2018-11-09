@@ -1,0 +1,110 @@
+/*最顶部*/
+.sitenav_top {
+  width: 100%;
+  height: 50px;
+  padding-right: 48px;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.sitenav_top a {
+  display: block;
+}
+.sitenav_top a span {
+  padding: 12px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: #fff;
+}
+.sitenav_top .download {
+  width: 48px;
+  height: 48px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sitenav_top .download img {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+}
+.sitenav_top p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+/*页面底部*/
+.sitenav_footer {
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+.sitenav_footer .footer_title {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+.sitenav_footer .footer_title a {
+  float: left;
+  display: block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  color: #000;
+  font-size: 14px;
+}
+.sitenav_footer .footer_title a:last-child {
+  width: 40%;
+  border: none;
+}
+.sitenav_footer .footer_title a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.sitenav_footer .footer {
+  height: 60px;
+  padding: 15px 0;
+}
+.sitenav_footer .footer p {
+  text-align: center;
+}
+.sitenav_footer .footer p a {
+  color: #000;
+}
+/*主体 商城导航*/
+.sitenav_nav {
+  margin-top: 10px;
+}
+.sitenav_nav .link {
+  width: 300px;
+  margin: 0 auto;
+}
+.sitenav_nav .link a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 8px 6px;
+  border: 1px solid #bfbfbf;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  background-color: #f4f4f4;
+}
+.sitenav_nav .link a img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -1px;
+}

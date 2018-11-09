@@ -5,46 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/coupon.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
   <title>Document</title>
 </head>
 <body>
   <div class="container">
    
       <!-- 最顶部 -->
-      <div class="coupon_top">
+      <div class="sitenav_top">
         <div class="log fl">
           <a href="javascript:history.go(-1);"><span>&lt;</span></a>
         </div>
         <div class="download fr">
           <img src="./images/header_app.png" alt="">
         </div>
-          <p>优惠券</p>
+          <p>商城导航</p>
       </div>
 
       <!-- 品牌列表 -->
-      <div class="coupon_title">
-        <ul class="clearfix">
-          <!-- 挖个坑 -->
-          <!-- <li>
-            <a href="">
-              <img src="./images/pro-list-2rol-img.jpg" alt="">
-              <p>肯德基</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/pro-list-2rol-img.jpg" alt="">
-              <p>肯德基</p>
-            </a>
-          </li> -->
-         
-         
+      <div class="sitenav_nav">
+       <div class="link clearfix">
+         <!-- 挖个坑 -->
+          <!-- <a href="#">
+              <img src="http://misc.manmanbuy.com/images/hzweb/360.png" alt="">
+              京东商城
+            </a>       -->
+       </div>
+
       </div>
      
 
         <!-- 页面底部 -->
-      <div class="coupon_footer">
+      <div class="sitenav_footer">
           <div class="footer_title clearfix">
             <a href="javascript:;">登录</a>
             <a href="javascript:;">注册</a>
@@ -61,23 +53,21 @@
         </div>
 
   </div>
-
-  <script type="text/html" id="titleTmp">
-    {{each result v i}}
-    <li data-id="couponId">
-      <a href="couponproduct.html?couponid={{v.couponId}}&name={{v.couponTitle}}">
-        <img src="{{v.couponImg}}" alt="">
-        <p>{{v.couponTitle}}</p>
-      </a>
-    </li>
-    {{/each}}
+  <script type="text/html" id="linkTmp">
+    {{ each result v i }}
+    <a href="{{v.navHref}}">
+      <img src="{{v.navImg}}" alt="">
+      {{v.navTitle}}
+    </a>
+    {{/each}}    
   </script>
+ 
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/IScroll/iscroll.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
 
   <!-- 引入自己的js -->
-  <script src="./js/coupon.js"></script>
+  <script src="./js/sitenav.js"></script>
 </body>
 </html>

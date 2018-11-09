@@ -47,6 +47,27 @@
 
 }
 
+/*按钮*/ 
+.toTop{
+   
+   a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+     
+     z-index:999;
+     position: fixed;
+     bottom:20px;
+     right: 10px;
+    
+     background: url("../images/icon_bar.png") no-repeat -140px -12px;
+     background-color: rgba(0, 0, 0, 0.5);
+      padding:6px; 
+      background-origin:content-box;
+      background-size:220px 132px;
+   }
+}
+
 /*产品列表*/ 
 .product_list{
 
@@ -80,7 +101,6 @@
        }
       
      }
-    
 
     /*搜索按钮*/ 
     .search_btn{
@@ -101,9 +121,11 @@
     margin-top:5px;
     li{
       height: 150px;
+      padding-left: 10px;
+      padding-top: 10px;
       // padding: 14px 8px;
       background-color: #fff;
-      border-bottom: 1px solid #e7e7e7;
+      border-bottom: 5px solid #e7e7e7;
       position: relative;
       >a{
         display: block;
@@ -114,7 +136,8 @@
         height: 100%;
       }
       .item_left{
-        width: 140px;
+        width: 135px;
+       
   
         img{
           width: 130px;
@@ -132,7 +155,7 @@
          
         }
         .price{
-          margin-top: 4px;
+          margin-top: 2px;
           font-size: 24px;
           color: #ff5e5d;
           i{
@@ -152,7 +175,7 @@
         .bottom{
           position: relative;
           .slide{
-            margin-top:15px;
+            margin-top:10px;
             position: relative;
   
             .bar{
@@ -195,7 +218,7 @@
               float: left;
               a{
                 display: block;
-                padding: 5px;
+                padding: 2px 5px;
                 border: 1px dashed #ff5e5d;
                 width: 115px;
                
@@ -207,10 +230,11 @@
   
           .link{
             float: right;
-            margin-top:10px;
+            margin-top:8px;
             margin-right: 5px;
             height: 28px;
             width: 60px;
+           ;
             a{
               // position: absolute;
               // right: 10px;
@@ -223,7 +247,7 @@
                 border-radius: 5px;
                 display: block;
                 color: #fff;
-                padding: 2px 5px;
+                
             }
            
           }
@@ -233,8 +257,6 @@
       
     }
   }
-    
- 
 
   }
 

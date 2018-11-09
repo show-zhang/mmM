@@ -39,6 +39,21 @@
   color: #fff;
   overflow: hidden;
 }
+/*按钮*/
+.toTop a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background: url("../images/icon_bar.png") no-repeat -140px -12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px;
+  background-origin: content-box;
+  background-size: 220px 132px;
+}
 /*产品列表*/
 .product_list .category_head {
   height: 38px;
@@ -84,8 +99,10 @@
 }
 .product_list .recommen_List li {
   height: 150px;
+  padding-left: 10px;
+  padding-top: 10px;
   background-color: #fff;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 5px solid #e7e7e7;
   position: relative;
 }
 .product_list .recommen_List li > a {
@@ -97,7 +114,7 @@
   height: 100%;
 }
 .product_list .recommen_List li .item_left {
-  width: 140px;
+  width: 135px;
 }
 .product_list .recommen_List li .item_left img {
   width: 130px;
@@ -114,7 +131,7 @@
   font-weight: 400;
 }
 .product_list .recommen_List li .item_right .price {
-  margin-top: 4px;
+  margin-top: 2px;
   font-size: 24px;
   color: #ff5e5d;
 }
@@ -135,7 +152,7 @@
   position: relative;
 }
 .product_list .recommen_List li .item_right .bottom .slide {
-  margin-top: 15px;
+  margin-top: 10px;
   position: relative;
 }
 .product_list .recommen_List li .item_right .bottom .slide .bar i {
@@ -175,7 +192,7 @@
 }
 .product_list .recommen_List li .item_right .bottom .slide .get a {
   display: block;
-  padding: 5px;
+  padding: 2px 5px;
   border: 1px dashed #ff5e5d;
   width: 115px;
   color: #fc353a;
@@ -183,7 +200,7 @@
 }
 .product_list .recommen_List li .item_right .bottom .link {
   float: right;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 5px;
   height: 28px;
   width: 60px;
@@ -196,7 +213,6 @@
   border-radius: 5px;
   display: block;
   color: #fff;
-  padding: 2px 5px;
 }
 /*页面底部*/
 .baicaijia_footer {

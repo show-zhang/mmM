@@ -1,0 +1,108 @@
+/*最顶部*/
+.coupon_top {
+  width: 100%;
+  height: 50px;
+  padding-right: 48px;
+  background-color: #f4483e;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.coupon_top a {
+  display: block;
+}
+.coupon_top a span {
+  padding: 12px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: #fff;
+}
+.coupon_top .download {
+  width: 48px;
+  height: 48px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.coupon_top .download img {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+}
+.coupon_top p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+/*页面底部*/
+.coupon_footer {
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+.coupon_footer .footer_title {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+.coupon_footer .footer_title a {
+  float: left;
+  display: block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  color: #000;
+  font-size: 14px;
+}
+.coupon_footer .footer_title a:last-child {
+  width: 40%;
+  border: none;
+}
+.coupon_footer .footer_title a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.coupon_footer .footer {
+  height: 60px;
+  padding: 15px 0;
+}
+.coupon_footer .footer p {
+  text-align: center;
+}
+.coupon_footer .footer p a {
+  color: #000;
+}
+/*主体*/
+.coupon_title {
+  padding-top: 10px;
+}
+.coupon_title li {
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.coupon_title li a {
+  display: block;
+  width: 118px;
+  height: 75px;
+  text-align: center;
+  border: 1px solid #eee;
+  padding-top: 5px;
+}
+.coupon_title li a img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.coupon_title li a p {
+  color: #000;
+}

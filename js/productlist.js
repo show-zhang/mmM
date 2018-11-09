@@ -4,7 +4,7 @@ $(function(){
   // $("#category").text(category);
   
   //分类id
-  var categoryId=getSearch("categoryId");
+  var categoryId=getSearch("categoryid");
   // console.log(categoryId);
   var pageid=getSearch("pageid");
   var categoryName='';//用于存放三级分类名

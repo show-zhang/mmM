@@ -1,0 +1,243 @@
+@color:#ff841d;
+  /*最顶部*/
+.gsproduct_top{
+    width: 100%;
+    height: 50px;
+    // font-size: 20px;
+    padding-right: 48px;
+    background-color: @color;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    a{
+      display: block;
+      span{
+        padding: 12px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        color:#fff;
+      }
+    }
+
+    .download{
+      width: 48px;
+      height: 48px;
+      padding-top:7px;
+      position: absolute;
+      top:0;
+      right: 0;
+
+      img{
+        width: 34px;
+        height: 34px;
+        margin: 0 auto;
+        
+      }
+    }
+    p{
+      // width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color:#fff;
+      overflow: hidden;
+    }
+
+}
+
+/*页面底部*/
+.gsproduct_footer{
+  margin-top:25px;
+  background-color: #f1f1f1;
+  
+
+ .footer_title{
+   background-color: #efefef;
+   border-top:1px solid #c4c4c4; 
+   border-bottom:1px solid #c4c4c4; 
+   height: 34px;
+   line-height: 34px;
+
+     a{
+       float: left;
+       display: block;
+       width: 30%;
+       text-align: center;
+       border-right: 1px solid #c4c4c4;
+       color:#000;
+       font-size: 14px;
+     
+     }
+     a:last-child{
+       width: 40%;
+       border:none;
+   
+       img{
+         width: 15px;
+         height: 15px;
+         display: inline;
+         vertical-align:middle;
+         margin-top:-4px;
+         
+       }
+     }
+ }
+
+ .footer{
+
+   height: 60px;
+   padding: 15px 0;
+   p{
+     text-align: center;
+     a{
+       color: #000;
+     }
+   }
+ }
+}
+.container{
+  position: relative;
+}
+
+.nav{
+  position: relative;
+  height: 37px;
+  display: flex;
+  .category{
+    // overflow: hidden;
+    height: 37px;
+    width: 100%;
+    flex:1;
+    // background-color: blue;
+    .shopNav{
+      border-bottom: 1px solid #ccc;
+      li{
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        a{
+          display: block;
+          font-size: 16px;
+          color:#000;
+          line-height:37px;
+        }
+      }
+    }
+  }
+
+  /*搜索按钮*/ 
+  .search_btn{
+    width: 38px;
+    height: 38px;
+    // position: absolute;
+    // right: 0;
+    // top:0;
+    
+    background: url("../images/icon_bar.png") no-repeat -10px -55px;
+    // background-color: #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding:8px; 
+    background-origin:content-box;
+    background-size:220px 132px;
+  }
+}
+/*下方标题*/ 
+.areaNav{
+ position: absolute;
+ display: none;
+  float: left;
+  width: 100%;
+
+  li{
+    position: relative;
+
+    a{
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      padding-left: 10px;
+      color:#000;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      
+    }
+
+    &::after{
+      content: "";
+      display:none;
+      width: 20px;
+      height: 20px;
+      background: url("../images/active.png") no-repeat center;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    
+  }
+  .on:after{
+    display:block;
+  }
+
+}
+.areaNav.on{
+  display: block;
+}
+
+.gsproduct_list{
+  background-color: #f1f1f1;
+  padding: 2% 0;
+  ul{
+    width: 98%;
+    margin: 0 auto;
+  }
+  li{
+    float: left;
+    width: 50%;
+    
+    // margin-right:5px;
+    // margin-bottom:5px;
+    
+    a{
+      display: block;
+      margin: 5px;
+      background-color: #fff;
+      
+      img{
+        width: 174px;
+        height: 174px;
+        margin: 0 auto;
+
+      }
+
+      .title{
+        color:#000;
+        margin: 0 5px;
+        overflow: hidden;
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px;
+      }
+      .other{
+        height: 45px;
+        padding:10px 5px;
+
+        .price{
+          font-size: 20px;
+          color: #f8601d;
+          float: left;
+        }
+        .goBuy{
+          color:#fff;
+          background-color: orange;
+          padding: 3px 5px;
+          float: right;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
