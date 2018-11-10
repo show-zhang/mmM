@@ -1,11 +1,6 @@
 $(function(){
 
-  var myScroll = new IScroll('#wapper', {
-    mouseWheel: true,
-    // scrollbars: true,
-    scrollX : true,
-    // scrollY : false
-  });
+
  
   //获取滚动标题
   $.ajax({
@@ -16,9 +11,13 @@ $(function(){
       //  console.log(info);
        var htmlStr=template("titleTmp",info);
        $("#wapper ul").html(htmlStr);
-
+      
+      //  获取搜索按钮的宽度
+      //  console.log( $(".search_btn").outerWidth());//38
+      //  console.log( $(".search_btn").width()+16);//width是22px  padding：8不被包含
+       
        // 计算ul的宽度
-       var ulWidth=0;
+       var ulWidth= $(".search_btn").outerWidth();
       //  遍历获取所有li的宽度。相加就是ul的宽度
        $('#wapper ul li').each(function(index,ele){
         ulWidth+=$(ele).width();
@@ -26,9 +25,18 @@ $(function(){
       //设置给ul宽度
       $("#wapper ul").width(++ulWidth);
       console.log( $("#wapper ul").width());
+
+      // 配置IScroll
+      var myScroll = new IScroll('#wapper', {
+        mouseWheel: true,
+        // scrollbars: true,
+        scrollX : true,
+        // scrollY : false
+      });
       
      }
   });
+ 
 
     //  延时加载
     setTimeout(function(){
